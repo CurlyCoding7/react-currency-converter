@@ -1,0 +1,90 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 45%;
+  background-color: rgb(155, 153, 153);
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.card{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  /* margin: 1rem 0; */
+  background-color: #fff;
+  font-size: large;
+  border-radius: 5px;
+  /* flex-wrap: wrap; */
+
+}
+
+.card > div{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card input{
+  padding: 0.5rem;
+  font-size: large;
+  outline: none;
+  width: 50%;
+}
+
+.card select, option{
+  padding: 0.5rem;
+  font-size: large;
+  outline: none;
+}
+
+#swap-btn, #convert-btn{
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: blue;
+  font-size: large;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+#swap-btn{
+  width: 5rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+
+}
+
+#convert-btn{
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+
+}
+
+@media (max-width: 850px) {
+  .container{
+    width: 90%;
+    height: 95%;
+  }
+  .card{
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
